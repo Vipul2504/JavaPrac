@@ -33,7 +33,7 @@ public class LinearSearchArrayTarget {
         }
         
     }
-    static ArrayList<Integer> list = new ArrayList<>()
+    static ArrayList<Integer> list = new ArrayList<>();
     static int findAllIndex(int[] arr, int target, int index){
         if(index == -1){
             return -1;
@@ -44,6 +44,7 @@ public class LinearSearchArrayTarget {
         else{
             return findAllIndex(arr, target, index + 1);
         }
+        return index;
         
     }
 }
